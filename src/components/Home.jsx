@@ -15,7 +15,7 @@ const headingOptions = {
     transform: "translate(-50%, -50%)",
     textTransform: "uppercase",
     p: '4',
-    size: '4xl'
+    // size: '2xl'
 }
 
 const Home = () => {
@@ -43,27 +43,27 @@ const MyCarousel = () => {
     return(
     <Carousel autoPlay infiniteLoop interval={1000} showStatus={false} showThumbs={false} showArrows={false}>
         <Box w={"full"} h={"100vh"}>
-            <Image src={img1} />
-            <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
-                Watch The Future
+            <Image src={img1} h={'full'} w={'full'} objectFit={'cover'}/>
+            <Heading bgColor={'blackAlpha.700'} color={'white'} size={['2xl','3xl']} {...headingOptions}>
+                Welcome to StudyHub
             </Heading>
         </Box>
         <Box w={"full"} h={"100vh"}>
-            <Image src={img2} />
-            <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions}>
-                Watch The Future
+            <Image src={img2} h={'full'} w={'full'} objectFit={'cover'}/>
+            <Heading bgColor={'whiteAlpha.600'} color={'black'} size={['2xl','3xl']}  {...headingOptions}>
+            Discover a new world of learning
             </Heading>
         </Box>
         <Box w={"full"} h={"100vh"}>
-            <Image src={img3} />
-            <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
-                Gaming on Console
+            <Image src={img3} h={'full'} w={'full'} objectFit={'cover'} />
+            <Heading bgColor={'blackAlpha.800'} color={'white'} size={['2xl','3xl']}  {...headingOptions}>
+            Education is the biggest luxury
             </Heading>
         </Box>
         <Box w={"full"} h={"100vh"}>
-            <Image src={img4} />
-            <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>
-                Night Life is Cool
+            <Image src={img4} h={'full'} w={'full'} objectFit={'cover'} />
+            <Heading bgColor={'blackAlpha.600'} color={'white'} size={['2xl','3xl']}  {...headingOptions}>
+            Read and grow
             </Heading>
         </Box>
     </Carousel>
