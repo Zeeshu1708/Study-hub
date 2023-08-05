@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
         <>
-            <Button pos={"fixed"} top={"4"} left={"4"} colorScheme='purple' p={"0"} h={"10"} w={"10"} borderRadius={"full"} onClick={onOpen}>
+            <Button zIndex={'overlay'} pos={"fixed"} top={"4"} left={"4"} colorScheme='purple' p={"0"} h={"10"} w={"10"} borderRadius={"full"} onClick={onOpen}>
                 <BiMenuAltLeft size={'20'} />
             </Button>
 
@@ -25,7 +25,7 @@ const Header = () => {
                             </Button>
                             
                             <Button onClick={onClose} variant={"ghost"} colorScheme='purple'>
-                                <Link to={'/Videos'}>Videos</Link>
+                                <Link to={'/videos'}>Videos</Link>
                             </Button>
 
                             <Button onClick={onClose} variant={"ghost"} colorScheme='purple'>
