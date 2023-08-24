@@ -20,7 +20,7 @@ const headingOptions = {
 
 const Home = () => {
     return ( 
-    <Box>
+    <Box scrollBehavior={'smooth'}>
       <MyCarousel />
       <Container maxW={'container.xl'} minH={'100vh'} p={['10','16']} >
         <Heading textTransform={'uppercase'} py={'2'} w={'fit-content'} borderBottom={'2px solid'} m={'auto'}>
